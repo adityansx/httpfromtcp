@@ -8,13 +8,6 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-type parserState string
-
-const (
-	StateInit parserState = "init"
-	StateDone parserState = "done"
-)
-
 type chunkReader struct {
 	data            string
 	numBytesPerRead int
